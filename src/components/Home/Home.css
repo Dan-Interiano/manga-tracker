@@ -1,0 +1,11 @@
+img{
+    height: 75vh;
+    width: 100%;
+    position: relative;
+}
+.home-text {
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    color: rgba(221, 89, 18, 0.817);
+}

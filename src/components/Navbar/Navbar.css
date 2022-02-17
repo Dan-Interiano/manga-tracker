@@ -2,11 +2,10 @@
     display: flex;
     background-color: rgb(245, 167, 49);
     padding: 15px;
-
+    justify-content: space-between;
 }
 .nav-links {
     display: flex;
-    background-color: rgb(255, 183, 0);
     justify-content: center;
     width: 65%;
 }
@@ -14,5 +13,4 @@
     display: inline;
     padding: 10px;
     float: left;
-
 }

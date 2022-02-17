@@ -5,7 +5,7 @@ import "./Navbar.css"
 export default function NavBar() {
     return (
         <nav className='nav-bar'>
-            <h1>Riano's Manga Tracker</h1>
+        <h1>Riano's Manga Tracker</h1>
             <div className="nav-links">
                 <ul>
                     <li>
@@ -20,8 +20,8 @@ export default function NavBar() {
                     <li>
                         <NavLink className="nav-link" to="/contact">Contact</NavLink>
                     </li>
-                   
                 </ul>
+
             </div>
         </nav>
     )

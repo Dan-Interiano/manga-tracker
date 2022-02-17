@@ -1,0 +1,28 @@
+.about-container{
+    position: relative;
+}
+.about-img{
+    opacity: 0.5;
+}
+.about-title{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    color: rgb(171, 28, 28);
+}
+.left-div{
+    float: left;
+    border: 3px solid rgb(198, 39, 39);
+    width: 50%;
+    position: absolute;
+    top: 100px;
+}   
+.right-div{
+    float: right;
+    border: 3px solid black;
+    width: 50%;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 50%
+}
