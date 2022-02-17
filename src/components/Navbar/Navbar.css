@@ -1,0 +1,18 @@
+.nav-bar {
+    display: flex;
+    background-color: rgb(245, 167, 49);
+    padding: 15px;
+
+}
+.nav-links {
+    display: flex;
+    background-color: rgb(255, 183, 0);
+    justify-content: center;
+    width: 65%;
+}
+.nav-links li {
+    display: inline;
+    padding: 10px;
+    float: left;
+
+}
