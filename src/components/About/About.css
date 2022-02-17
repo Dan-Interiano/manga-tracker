@@ -3,6 +3,7 @@
 }
 .about-img{
     opacity: 0.5;
+    height: 100%;
 }
 .about-title{
     position: absolute;

@@ -12,7 +12,7 @@ export default function NavBar() {
                         <NavLink className="nav-link" to="/">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink className="nav-link" to="/favorites">Favorites</NavLink>
+                        <NavLink className="nav-link" to="/Manga">Manga</NavLink>
                     </li>
                     <li>
                         <NavLink className="nav-link" to="/about">About</NavLink>

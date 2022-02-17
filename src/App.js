@@ -4,7 +4,7 @@ import {Switch, Route } from 'react-router-dom'
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Favorites from './components/Favorites/Favorites'
+import Manga from './components/Manga/Manga'
 
 function App() {
   return (
@@ -14,11 +14,11 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/" component={Home} />
-        <Route exact path="/favorites" component={Favorites} />
+        <Route exact path="/Manga" component={Manga} />
         <Home />
         <About />
         <Contact />
-        <Favorites />
+        <Manga />
       </Switch>
     </div>
   );
