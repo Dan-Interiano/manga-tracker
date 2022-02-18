@@ -82,7 +82,8 @@
         {
             "id": 14,
             "name": "Fire Force",
-            "imageURL": "https://flxt.tmsimg.com/assets/p17132369_b_h9_aa.jpg"
+            "imageURL": "https://flxt.tmsimg.com/assets/p17132369_b_h9_aa.jpg",
+            "description": ""
         }
 
     ]

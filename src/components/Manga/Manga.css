@@ -1,0 +1,83 @@
+.manga-card-img{
+    height: 100px;
+    width: 125px;
+    border-radius: 5px;
+}
+.manga-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.manga-card{
+    border: 3px solid rgb(196, 132, 22);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.manga-title{
+    position: absolute;        
+}
+.card-container{
+    position: relative;
+    top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(230, 203, 170);
+}
+.card-title{
+    padding: 5px;
+    height: 15px;
+    border: 3px solid rgb(199, 106, 25);
+    color: rgb(12, 36, 28);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+}
+button{
+    margin: 8px;
+    border-radius: 5px;
+}
+.like-btn{
+    background-color: rgb(44, 171, 44);
+}
+.dislike-btn{
+    background-color: crimson;
+}
+#button-3 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #button-3 a {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  
+  #circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #BFC0C0;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+  }
+  
+  #button-3:hover #circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+  }
+  
+  #button-3:hover a {
+    color: #2D3142;
+  }

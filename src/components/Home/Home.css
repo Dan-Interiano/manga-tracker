@@ -1,11 +1,132 @@
-img{
-    height: 75vh;
-    width: 100%;
+.container{
     position: relative;
+}
+img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
 }
 .home-text {
     position: absolute;
-    top: 100px;
+    top: 20px;
     left: 15px;
-    color: rgba(221, 89, 18, 0.817);
+    color: rgba(84, 47, 28, 0.817);
+    font-style: italic;
 }
+p{
+    position: absolute;
+    bottom: 350px;
+    border: 3px solid rgb(171, 121, 36);
+    border-radius: 5px;
+    width: 50%;
+    left: 15px;
+    padding: 20px;
+    color: rgb(29, 29, 38);
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+    background-color: antiquewhite;
+    opacity: 0.8;
+}
+.home-img{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    left: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation: fade 24s infinite;
+    animation: fade 24s infinite;
+}
+#pic1 {
+    animation-delay: 0s;
+}
+#pic2 {
+    animation-delay: 3s;
+}
+#pic3 {
+    animation-delay: 6s;
+}
+#pic4 {
+    animation-delay: 9s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    34% {
+      opacity: 0;
+    }
+    88% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    34% {
+      opacity: 0;
+    }
+    88% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #button-3 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15px;
+    bottom: 300px;
+    left: 300px;
+    width: 150px;
+    border: 3px solid rgb(171, 121, 36);
+    background-color: rgb(228, 195, 111);
+    padding: 10px;
+    
+  }
+  
+  #button-3 navlink {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  
+  #circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #e4dd92;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+  }
+  
+  #button-3:hover #circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+  }
+  
+  #button-3:hover a {
+    color: #d0ca8a;
+  }
