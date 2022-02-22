@@ -3,6 +3,9 @@
     background-color: rgb(237, 170, 54);
     padding: 15px;
     justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
 }
 .nav-links {
     display: flex;

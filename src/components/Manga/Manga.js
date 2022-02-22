@@ -38,6 +38,8 @@ export default function Manga() {
               <img src={manga.imageURL} className="manga-card-img" alt={manga.title} />
               <div className='card-body'>
                 <h5 className='card-title'>{manga.name}</h5>
+                <h6>{manga.author}</h6>
+                <h6>{manga.activity}</h6>
               </div>
               <button className='like-btn' onClick={handleLikeButton}>Like</button>
               <button className='dislike-btn' onClick={handleDislikeButton}>Dislike</button>
@@ -56,11 +58,12 @@ export default function Manga() {
       <div className='manga-container'>
         <h1 className='manga-title'>Popular Manga</h1>
         <br />
+        <div>
+          <MangaForm />
+        </div>
         {loading ? <Loading /> : <ShowManga />}
       </div>
-      <div>
-        <MangaForm />
-      </div>
+
     </div>
   )
 }

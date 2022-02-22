@@ -5,8 +5,9 @@
 }
 .manga-container{
     display: flex;
-    position: relative;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .manga-card{
     border: 3px solid rgb(196, 132, 22);
@@ -15,16 +16,16 @@
     margin: 10px;
     justify-content: center;
     align-items: center;
+
 }
 .manga-title{
-    position: absolute;        
+      
 }
 .card-container{
-    position: relative;
-    top: 75px;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(230, 203, 170);
+    margin: 70px 30px;
 }
 .card-title{
     padding: 5px;
@@ -63,7 +64,7 @@ button{
     opacity: 0;
     line-height: 40px;
     border-radius: 50%;
-    background: #BFC0C0;
+    background: #ebe7bc;
     position: absolute;
     transition: all .5s ease-Out;
     top: 20px;

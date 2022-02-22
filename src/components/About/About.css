@@ -1,29 +1,40 @@
+body{
+    background-color: rgb(223, 196, 147);
+    margin: 20px;
+}   
 .about-container{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image:var("./assests/about-image.jpg");
+    height: 100vh;
+    justify-content: center;
+    margin: 50px;
 }
-.about-img{
-    opacity: 0.5;
+.top-div{
+    border: 3px solid black;
+    width: 90%;
+    height: 60%;
+    margin: 10px;
+}
+.top-img{
+    width: 100%;
     height: 100%;
 }
-.about-title{
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    color: rgb(171, 28, 28);
-}
-.left-div{
-    float: left;
-    border: 3px solid rgb(198, 39, 39);
-    width: 50%;
-    position: absolute;
-    top: 100px;
+.bottom-div{
+    border: 3px solid rgb(202, 146, 55);
+    border-radius: 8px;
+    width: 90%;
+    height: 70%;
+    margin: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
 }   
-.right-div{
-    float: right;
-    border: 3px solid black;
-    width: 50%;
-    position: absolute;
-    top: 250px;
-    width: 100%;
-    height: 50%
+.about-pg {
+    font-size: medium;
+    font-style: normal;
+    font-weight: bold;
 }
+
+
+/* "./assests/about-image.jpg" */

@@ -1,0 +1,13 @@
+label {
+    padding: 10px;
+}
+input {
+    border-radius: 3px;
+}
+.form-container{
+    border: 3px rgb(184, 128, 26) solid;
+    border-radius: 8px;
+    background-color: rgb(230, 203, 170);
+    padding: 10px;
+    
+}
