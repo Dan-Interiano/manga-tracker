@@ -17,12 +17,6 @@ export default function Manga() {
     setLoading(false);
   }, []);
 
-  function handleLikeButton(event) {
-    console.log(event)
-  }
-  function handleDislikeButton(event) {
-    console.log(event)
-  }
   const Loading = () => {
     return (
       <div>
@@ -38,9 +32,9 @@ export default function Manga() {
             <div key={manga.id} className="manga-card">
               <img src={manga.image} className="manga-card-img" alt={manga.title} />
               <div className='card-body'>
-                <h5 className='card-title'>{manga.name}</h5>
-                <h6>{manga.author}</h6>
-                <h6>{manga.activity}</h6>
+                <h4 className='card-title'>{manga.name}</h4>
+                <h5>{manga.author}</h5>
+                <h5>{manga.activity}</h5>
                 <ReactStars />
               </div>
             </div>

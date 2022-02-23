@@ -33,21 +33,21 @@ export default function MangaForm() {
         <form onSubmit={handleSubmit}>
           <h2>Add your new favorite manga here!</h2>
             <label>
-                Name <input type="text" name="name" value={formData.name} onChange={handleChange}/>
+                Name: <input type="text" name="name" value={formData.name} onChange={handleChange}/>
             </label>
             <label>
-                Author <input type="text" name="author" value={formData.author} onChange={handleChange}/>
+                Author: <input type="text" name="author" value={formData.author} onChange={handleChange}/>
             </label>
             <label>
-                Image URL <input type="text" name="image" value={formData.image} onChange={handleChange}/>
+                Image URL: <input type="text" name="image" value={formData.image} onChange={handleChange}/>
             </label>
             <label>
-                Description <input type="text" name="description" value={formData.description} onChange={handleChange}/>
+                Description: <input type="text" name="description" value={formData.description} onChange={handleChange}/>
             </label>
             <label>
-                Activity <input type="text" name="activity" value={formData.activity} onChange={handleChange}/>
+                Activity: <input type="text" name="activity" value={formData.activity} onChange={handleChange}/>
             </label>
-            <button type='submit'>Submit</button>
+            <button type='submit' className='submit-btn'>Submit</button>
         </form>
         
     </div>

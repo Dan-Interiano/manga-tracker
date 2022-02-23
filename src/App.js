@@ -5,9 +5,12 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Manga from './components/Manga/Manga'
+import { ColorModeProvider } from "@chakra-ui/color-mode"
+
 
 function App() {
   return (
+    
     <div className="App">
       <NavBar />
       <Switch>
