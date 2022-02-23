@@ -4,7 +4,7 @@ import "./MangaForm.css"
 export default function MangaForm() {
   const [formData, setFormData] = useState({
     name: "",
-    imageURL: "",
+    image: "",
     description: "",
     author: "",
     activity: ""
@@ -16,10 +16,21 @@ export default function MangaForm() {
       [event.target.name]: event.target.value,
     });
   }
-
+  function handleSubmit(event){
+    event.preventDefault();
+    fetch("http://localhost:3000/mangaData", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData),
+    })
+    .then((res) => res.json())
+    .then((data) => setFormData(data))
+  }
   return (
     <div className='form-container'>
-        <form>
+        <form onSubmit={handleSubmit}>
           <h2>Add your new favorite manga here!</h2>
             <label>
                 Name <input type="text" name="name" value={formData.name} onChange={handleChange}/>
@@ -28,7 +39,7 @@ export default function MangaForm() {
                 Author <input type="text" name="author" value={formData.author} onChange={handleChange}/>
             </label>
             <label>
-                Image URL <input type="text" name="image-url" value={formData.imageURL} onChange={handleChange}/>
+                Image URL <input type="text" name="image" value={formData.image} onChange={handleChange}/>
             </label>
             <label>
                 Description <input type="text" name="description" value={formData.description} onChange={handleChange}/>
@@ -36,7 +47,7 @@ export default function MangaForm() {
             <label>
                 Activity <input type="text" name="activity" value={formData.activity} onChange={handleChange}/>
             </label>
-            <button>Submit</button>
+            <button type='submit'>Submit</button>
         </form>
         
     </div>

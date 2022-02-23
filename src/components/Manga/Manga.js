@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./Manga.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MangaForm from '../MangaForm/MangaForm';
+import ReactStars from 'react-stars';
 
 export default function Manga() {
   const [data, setData] = useState([]);
@@ -35,14 +36,13 @@ export default function Manga() {
         {data.map((manga) => {
           return (
             <div key={manga.id} className="manga-card">
-              <img src={manga.imageURL} className="manga-card-img" alt={manga.title} />
+              <img src={manga.image} className="manga-card-img" alt={manga.title} />
               <div className='card-body'>
                 <h5 className='card-title'>{manga.name}</h5>
                 <h6>{manga.author}</h6>
                 <h6>{manga.activity}</h6>
+                <ReactStars />
               </div>
-              <button className='like-btn' onClick={handleLikeButton}>Like</button>
-              <button className='dislike-btn' onClick={handleDislikeButton}>Dislike</button>
             </div>
           )
         })}

@@ -17,9 +17,9 @@ export default function NavBar() {
                     <li>
                         <NavLink className="nav-link" to="/about">About</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink className="nav-link" to="/contact">Contact</NavLink>
-                    </li>
+                    </li> */}
                 </ul>
 
             </div>
