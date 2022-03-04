@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import "./Manga.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MangaForm from '../MangaForm/MangaForm';
 import ReactStars from 'react-stars';
+import { NavLink } from 'react-router-dom';
 
 export default function Manga() {
   const [data, setData] = useState([]);
@@ -36,6 +37,7 @@ export default function Manga() {
                 <p>{manga.author}</p>
                 <p>Publisher: {manga.publisher}</p>
                 <p>{manga.activity}</p>
+                <NavLink to={`/mangas/:${manga.id}`} className="rate-btn">Rate</NavLink>
                 <ReactStars />
               </div>
             </div>

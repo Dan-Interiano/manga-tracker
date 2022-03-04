@@ -8,12 +8,10 @@ export default function Home() {
             {/* <img src="./assests/mangaimage1.jpg" className="home-bg" alt="manga" /> */}
             <div className="upper-div">
                 <h1 className="title-text">Browse through many of the most popular manga</h1>
-                
-                    <img src="./assests/jjkvolume.jpg" id="pic4" className="home-img" alt="jjk" />
-                    <img src="./assests/opvolume.jpg" id="pic3" className="home-img" alt="one piece" />
-                    <img src="./assests/naruto-volume.jpeg" id="pic2" className="home-img" alt="naruto" />
-                    <img src="./assests/bleachvolume.jpeg" id="pic1" className="home-img" alt="bleach" />
-                
+                <div class="button" id="button-3">
+                    <button id="circle"></button>
+                    <NavLink to="/Manga" >Get Started!</NavLink>
+                </div>
             </div>
             <div className="lower-div">
                 <p className="home-pg">
@@ -28,11 +26,11 @@ export default function Home() {
                     With weekly, biweekly, and monthly releases it can be hard to keep
                     track of all the manga you're reading!
                 </p>
-            
-                <div class="button" id="button-3">
-                    <button id="circle"></button>
-                    <NavLink to="/Manga" >Get Started!</NavLink>
-                </div>
+                {/* <img src="./assests/jjkvolume.jpg" id="pic4" className="home-img" alt="jjk" />
+                    <img src="./assests/opvolume.jpg" id="pic3" className="home-img" alt="one piece" />
+                    <img src="./assests/naruto-volume.jpeg" id="pic2" className="home-img" alt="naruto" />
+                    <img src="./assests/bleachvolume.jpeg" id="pic1" className="home-img" alt="bleach" /> */}
+                
             </div>
         </div>
     )
