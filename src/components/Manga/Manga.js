@@ -11,7 +11,7 @@ export default function Manga() {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:3000/mangaData")
+    fetch("http://localhost:9292/mangas")
       .then((res) => res.json())
       .then((data) => setData(data))
     setLoading(false);
@@ -32,7 +32,7 @@ export default function Manga() {
             <div key={manga.id} className="manga-card">
               <img src={manga.image} className="manga-card-img" alt={manga.title} />
               <div className='card-body'>
-                <h4 className='card-title'>{manga.name}</h4>
+                <h4 className='card-title'>{manga.title}</h4>
                 <h5>{manga.author}</h5>
                 <h5>{manga.activity}</h5>
                 <ReactStars />
