@@ -32,9 +32,10 @@ export default function Manga() {
             <div key={manga.id} className="manga-card">
               <img src={manga.image} className="manga-card-img" alt={manga.title} />
               <div className='card-body'>
-                <h4 className='card-title'>{manga.title}</h4>
-                <h5>{manga.author}</h5>
-                <h5>{manga.activity}</h5>
+                <p className='card-title'>{manga.title}</p>
+                <p>{manga.author}</p>
+                <p>Publisher: {manga.publisher}</p>
+                <p>{manga.activity}</p>
                 <ReactStars />
               </div>
             </div>

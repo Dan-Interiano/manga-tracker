@@ -6,19 +6,23 @@
 .manga-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .manga-card{
     border: 3px solid rgb(196, 132, 22);
     border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
+    margin: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 260px;
+    height: 50%;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+.card-body{
+  height: 50%;
+  padding: 10px;
 }
 .card-container{
     display: flex;
