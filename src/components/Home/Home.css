@@ -1,35 +1,29 @@
 .container{
     width: 100%;
-    height: 120vh;
-    overflow:hidden;
-    margin: 10px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    border: 3px solid black;
-    /* background-image: url("https://images.unsplash.com/photo-1613376023733-0a73315d9b06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
-    
+    justify-content: center;
 }
-footer {
-  margin: 30px;
-  border: 3px rgb(172, 38, 38) solid;
- 
+body {
+  background-color: #ffda99;
 }
+
 .title-text {
-    color: rgba(223, 43, 43, 0.817);
+    color: rgba(238, 122, 20, 0.817);
     font-style: italic;
+    margin: 20px;
 }
 .upper-div{
-  margin: 20px;
-  height: 100vh;
-
+  height: 65vh;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  
 }
 .lower-div{
-  width: 100%;
-  height: 50%;
-  margin: 20px; 
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1613376023733-0a73315d9b06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  border-radius: 5px;
 }
 .home-pg {
   width: 50%;
@@ -37,19 +31,20 @@ footer {
   padding: 15px;
   border: 3px solid rgb(171, 121, 36);
   border-radius: 5px;
+  background-color: antiquewhite;
+  opacity: 0.8;
   color: rgb(29, 29, 38);
   font-size: large;
   font-weight: bold;
   font-style: oblique;
-  background-color: antiquewhite;
-  opacity: 0.8;
+  float: right;
 }  
 /* Alternating Images */
 .home-img{
     position: absolute;
     height: 400px;
     width: 400px;
-    top: 180px;
+    margin: 30px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,12 +104,13 @@ footer {
     overflow: hidden;
     cursor: pointer;
     padding: 10px;
-    width: 150px;
-    border: 3px solid rgb(171, 121, 36);
+    width: 20%;
+    border: 3px solid rgb(218, 171, 91);
+    border-radius: 5px;
     background-color: rgb(228, 195, 111);
     padding: 10px;
     margin: 20px 20px;
-
+    
   } 
 
   #button-3 a {
@@ -130,8 +126,8 @@ footer {
     background: #e4dd92;
     position: absolute;
     transition: all .5s ease-Out;
-    top: 20px;
-    left: 70px;
+    /* top: 20px;
+    left: 70px; */
   }
   
   #button-3:hover #circle {
