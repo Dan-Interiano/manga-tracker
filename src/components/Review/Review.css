@@ -8,8 +8,17 @@
 .rev-container {
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 #rev-form {
     margin: 25px 10px;
+}
+.each-review{
+    border: 3px solid rgb(244, 203, 134);
+    padding: 5px;
+    margin: 5px;
+    color: rgb(148, 69, 0);
+}
+.rev-name{
+    color: rgb(77, 32, 4);
 }

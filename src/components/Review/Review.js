@@ -5,7 +5,8 @@ export default function Review() {
   const [revform, setRevForm] = useState({
     manga_id: undefined,
     comment: undefined,
-    score: undefined
+    score: undefined,
+    title: undefined
   })
 
   useEffect(() => {
@@ -40,9 +41,11 @@ export default function Review() {
       <div className='form-container' id='rev-form'>
         <form onSubmit={handleSubmit}>
           <h3>Add Your Review Here!</h3>
-          <label>Manga: <input type='text' name="manga_id" value={revform.manga_id} onChange={handleChange}/></label>
+          <label>Title: <input type="text" name="title" value={revform.title} onChange={handleChange}/></label>
+          <label>Manga Id: <input type='text' name="manga_id" value={revform.manga_id} onChange={handleChange}/></label>
           <label>Comment: <input type='text' name="comment" value={revform.comment} onChange={handleChange}/></label>
           <label>Score: <input type="text" name="score" value={revform.score} onChange={handleChange}/></label>
+          
           <button type='submit'>Submit</button>
         </form>
       </div>
@@ -50,7 +53,17 @@ export default function Review() {
       {mangas.map((rev) => {
         return (
           <div key={rev.id} className="review-card">
-            <h1 className='rev-name'>{rev.title}</h1>
+            <h1 className='rev-name'>{rev.title} </h1>
+            <h5>id:{rev.id}</h5>
+              {rev.reviews.map((review) => (
+                <div className='each-review'>
+                  <h4>{review.title}</h4>
+                  <p>{review.comment}</p>
+                  <h5>Rated {review.score} out of 5!</h5>
+                  <h6>Created at: {review.created_at}</h6>
+                </div>
+              ))}
+            
             
 
           </div>
