@@ -36,7 +36,8 @@
 .card-title{
     padding: 5px;
     height: 15px;
-    border: 3px solid rgb(199, 106, 25);
+    border: 3px solid rgb(198, 134, 79);
+    background-color: rgb(193, 130, 76);
     color: rgb(12, 36, 28);
     justify-content: center;
     align-items: center;

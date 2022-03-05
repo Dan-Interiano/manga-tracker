@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css"
 import { NavLink } from "react-router-dom";
+import Footer from "../Footer/footer";
 
 export default function Home() {
     return (
@@ -32,6 +33,7 @@ export default function Home() {
                 <img src="./assests/bleachvolume.jpeg" id="pic1" className="home-img" alt="bleach" />
                 
             </div>
+            <Footer />
         </div>
     )
 }
