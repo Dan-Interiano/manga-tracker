@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className='about-container'>
       <div className='top-div'>
-        <img src='./assests/about-image.jpg' className='top-img' alt='about background'/>
+        <img src='./assests/mangabox.jpg' className='top-img' alt='about background'/>
       </div>
       <div className='bottom-div'>
         <h3>About Us</h3>

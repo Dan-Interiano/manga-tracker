@@ -2,7 +2,7 @@
 .about-container{
     display: flex;
     flex-direction: column;
-    background-image:var("./assests/about-image.jpg");
+    background-image:var("./assests/mangabox.jpg");
     height: 100vh;
     justify-content: center;
     margin: 50px;

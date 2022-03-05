@@ -14,8 +14,11 @@ export default function Manga() {
     setLoading(true);
     fetch("http://localhost:9292/mangas")
       .then((res) => res.json())
-      .then((data) => setData(data))
-    setLoading(false);
+      .then((data) => {
+        console.log(data)
+        setData(data)})
+      setLoading(false);
+    
   }, []);
 
   const Loading = () => {
@@ -37,8 +40,8 @@ export default function Manga() {
                 <p>{manga.author}</p>
                 <p>Publisher: {manga.publisher}</p>
                 <p>{manga.activity}</p>
-                <NavLink to={`/mangas/:${manga.id}`} className="rate-btn">Rate</NavLink>
-                <ReactStars />
+                <NavLink to={`/review`} className="rate-btn">Rate</NavLink>
+                {/* <ReactStars /> */}
               </div>
             </div>
           )

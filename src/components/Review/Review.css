@@ -1,0 +1,15 @@
+.review-card{
+    border: 3px solid rgb(233, 123, 27);
+    border-radius: 5px;
+    margin: 10px;
+    width: 25%;
+    padding: 10px;
+}
+.rev-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+}
+#rev-form {
+    margin: 25px 10px;
+}
