@@ -5,13 +5,26 @@ import { NavLink } from "react-router-dom";
 export default function Home() {
     return (
         <div className="container">
-            {/* <img src="./assests/mangaimage1.jpg" className="home-bg" alt="manga" /> */}
             <div className="upper-div">
-                <h1 className="title-text">Browse through many of the most popular manga out now</h1>
-                <div class="button" id="button-3">
-                    <button id="circle"></button>
-                    <NavLink to="/Manga" >Get Started!</NavLink>
+                <div className="upper-left">
+                    <h1 className="welcome">Welcome</h1>
+                    <h3 className="sub-welcome">to Riano's Manga Tracker</h3>
+                    <br></br>
+                    <h3 className="title-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elitnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elitnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </h3>
+                    <div className="button">
+                        <NavLink to="/Manga" className="manga-btn">Get Started!</NavLink>
+                        <NavLink to="/about" className="manga-btn">Learn More</NavLink>
+                    </div>
                 </div>
+                <div className="upper-right">
+                <img src='./assests/mangabox.jpg' className='top-img' alt='about background'/>
+                </div>
+
             </div>
             <div className="lower-div">
                 <p className="home-pg">
@@ -30,9 +43,9 @@ export default function Home() {
                 <img src="./assests/opvolume.jpg" id="pic3" className="home-img" alt="one piece" />
                 <img src="./assests/naruto-volume.jpeg" id="pic2" className="home-img" alt="naruto" />
                 <img src="./assests/bleachvolume.jpeg" id="pic1" className="home-img" alt="bleach" />
-                
+
             </div>
-            
+
         </div>
     )
 }

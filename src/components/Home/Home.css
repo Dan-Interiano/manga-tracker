@@ -5,19 +5,50 @@
     justify-content: center;
 }
 body {
-  background-color: #ffda99;
+  /* background-color: #ffda99; */
+  background: linear-gradient(#f5d78a, #f09748);
+  margin: 0;
+}
+.welcome{
+  margin-bottom: 0;
+}
+.sub-welcome{
+  margin-top: 0;
+}
+.manga-btn {
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 17px;
+  margin: 20px;
+  
+  color: white;
+  background-color: #f09748;
+
+}
+.button{
+  margin-top: 50px;
+}
+.manga-btn:hover{
+  background-color: white;
+  color: black;
+}
+.upper-left{
+  width: 50%;
+  height: 100%;
+}
+.upper-right{
+  margin: 50px;
+  width: 40%;
+  height: 60%;
+  opacity: 0.8;
 }
 
-.title-text {
-    color: rgba(238, 122, 20, 0.817);
-    font-style: italic;
-    margin: 20px;
-}
 .upper-div{
-  height: 65vh;
+  height: 85vh;
   width: 100%;
   padding-top: 20px;
   padding-left: 20px;
+  display: flex;
   
 }
 .lower-div{
@@ -80,8 +111,9 @@ body {
     100% {
       opacity: 1;
     }
-  }
-  @keyframes fade {
+}
+
+@keyframes fade {
     0% {
       opacity: 1;
     }
@@ -97,47 +129,7 @@ body {
     100% {
       opacity: 1;
     }
-  }
+}
 
-  /* Buttons CSS */
-  #button-3 {
-    overflow: hidden;
-    cursor: pointer;
-    padding: 10px;
-    width: 20%;
-    border: 3px solid rgb(218, 171, 91);
-    border-radius: 5px;
-    background-color: rgb(228, 195, 111);
-    padding: 10px;
-    margin: 20px 20px;
-    
-  } 
-
-  #button-3 a {
-    transition: all .45s ease-Out;
-  }
   
-  #circle {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    line-height: 40px;
-    border-radius: 50%;
-    background: #e4dd92;
-    position: absolute;
-    transition: all .5s ease-Out;
-    /* top: 20px;
-    left: 70px; */
-  }
   
-  #button-3:hover #circle {
-    width: 200%;
-    height: 500%;
-    opacity: 1;
-    top: -70px;
-    left: -70px;
-  }
-  
-  #button-3:hover a {
-    color: #d0ca8a;
-  }
