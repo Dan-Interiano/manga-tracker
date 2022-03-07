@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Review from './components/Review/Review';
 import Manga from './components/Manga/Manga'
 import { ColorModeProvider } from "@chakra-ui/color-mode"
+import Footer from './components/Footer/footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Review />
         <Manga />
       </Switch>
+      <Footer />
     </div>
   );
 }

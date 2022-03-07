@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import "./Manga.css"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import "font-awesome/css/font-awesome.min.css"
+// import ReactStars from 'react-stars';
 import MangaForm from '../MangaForm/MangaForm';
-import ReactStars from 'react-stars';
 import { NavLink } from 'react-router-dom';
 
 export default function Manga() {
   const [data, setData] = useState([]);
-  //const [filter, setFilter] = useState(data);
   const [loading, setLoading] = useState(false);
+
+  // const { id, title, author, publisher, image, activity} = data;
 
   useEffect(() => {
     setLoading(true);
@@ -17,6 +19,7 @@ export default function Manga() {
       .then((data) => {
         console.log(data)
         setData(data)})
+        
       setLoading(false);
     
   }, []);
@@ -28,6 +31,15 @@ export default function Manga() {
       </div>
     );
   }
+  function handleDeleteClick(event){
+    const idd = event.target.name
+    fetch(`http://localhost:9292/mangas/${idd}`, {
+      method: "DELETE",
+    });
+    const updatedMangas = data.filter((manga) => manga.id !== idd);
+    setData(updatedMangas);
+  }
+  
   const ShowManga = () => {
     return (
       <div className='card-container'>
@@ -37,11 +49,15 @@ export default function Manga() {
               <img src={manga.image} className="manga-card-img" alt={manga.title} />
               <div className='card-body'>
                 <p className='card-title'>{manga.title}</p>
-                <p>{manga.author}</p>
+                <p>by: {manga.author}</p>
                 <p>Publisher: {manga.publisher}</p>
                 <p>{manga.activity}</p>
                 <NavLink to={`/review`} className="rate-btn">Rate</NavLink>
                 {/* <ReactStars /> */}
+                <div>
+                  <button className='btn' id="like-btn">Like</button>
+                  <button className='btn' id="delete-btn" name={manga.id} onClick={handleDeleteClick}>Delete</button>
+                </div>
               </div>
             </div>
           )

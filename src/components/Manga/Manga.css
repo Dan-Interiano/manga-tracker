@@ -24,6 +24,34 @@
   height: 50%;
   padding: 10px;
 }
+.btn{
+  margin: 8px 3px;
+}
+#like-btn{
+  background-color: rgb(50, 150, 50);
+  border-radius: 5px;
+  /* height: 45px;
+  width: 45px; */
+}
+
+#like-btn:hover{
+  background-color: rgb(48, 189, 142);
+}
+#delete-btn{
+  background-color: rgb(194, 81, 81);
+  border-radius: 5px;
+}
+#delete-btn:hover{
+  background-color: rgb(225, 35, 66);
+}
+.rate-btn{
+  padding: 5px;
+  margin: 7px;
+  background-color: rgb(127, 127, 232);
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 200;
+}
 .card-container{
     display: flex;
     flex-direction: row;
