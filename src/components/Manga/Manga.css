@@ -1,41 +1,56 @@
-.manga-card-img{
-    height: 100px;
-    width: 125px;
-    border-radius: 5px;
-}
 .manga-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
-.manga-card{
-    border: 3px solid rgb(196, 132, 22);
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 50%;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
 }
-.card-body{
+.card {
+  border: 3px solid rgb(196, 132, 22);
+  border-radius: 5px;
   height: 50%;
-  padding: 10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  margin: 15px;
+  width: 25%;
+  padding: 15px;
+  
+
 }
+.card-img{
+    height: 120px;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.card-body {
+  border: 3px solid rgb(226, 165, 95);
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
+  
+}
+.card-title{
+  color: rgb(90, 47, 23);
+  margin-bottom: 0;
+}
+/* Buttons */
 .btn{
   margin: 8px 3px;
 }
-#like-btn{
+#like-btn {
   background-color: rgb(50, 150, 50);
   border-radius: 5px;
-  /* height: 45px;
-  width: 45px; */
 }
 
+
 #like-btn:hover{
-  background-color: rgb(48, 189, 142);
+  background-color: rgb(104, 233, 130);
 }
 #delete-btn{
   background-color: rgb(194, 81, 81);
@@ -49,62 +64,8 @@
   margin: 7px;
   background-color: rgb(127, 127, 232);
   border-radius: 5px;
-  font-size: large;
-  font-weight: 200;
+  text-decoration: none;
+  color: black;
 }
-.card-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(222, 167, 101);
-    margin: 70px 30px;
-    padding: 20px;
-    border-radius: 10px;
-}
-.card-title{
-    padding: 5px;
-    height: 15px;
-    border: 3px solid rgb(198, 134, 79);
-    background-color: rgb(193, 130, 76);
-    color: rgb(12, 36, 28);
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    text-align: center;
-}
-/* Home Buttons */
-#button-3 {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
+
   
-  #button-3 a {
-    position: relative;
-    transition: all .45s ease-Out;
-  }
-  
-  #circle {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    line-height: 40px;
-    border-radius: 50%;
-    background: #ebe7bc;
-    position: absolute;
-    transition: all .5s ease-Out;
-    top: 20px;
-    left: 70px;
-  }
-  
-  #button-3:hover #circle {
-    width: 200%;
-    height: 500%;
-    opacity: 1;
-    top: -70px;
-    left: -70px;
-  }
-  
-  #button-3:hover a {
-    color: #2D3142;
-  }
