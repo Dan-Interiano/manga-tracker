@@ -3,11 +3,11 @@
 
 # Usage
 For users who want to make a personal list of Manga titles that they want to read or have already read, and want somewhere online to keep it stored.
-The site hosts a landing page that will lead the user to the manga page that pulls from a Sinatra backend database of manga titles and loads them to the page.
-With each manga title, there is informationn such as the author and publisher name. On every manga there will be a link towards the review page where users will be able to leave a review of any title which will update the backend database with Sinatra.
+The site hosts a landing page that will lead the user to the manga page that pulls from a Sinatra backend database of manga titles and loads them to the page, as well as the reviews page where users can leave a review of any manga they have read! There is also a like button that shows a user like it, and a delete button should a user like to remove a title from the database.
+With each manga title, there is information such as the author and publisher name. On every manga there will be a link towards the review page where users will be able to leave a review of any title which will update the backend database with Sinatra.
 
 # Roadmap
-In the future I plan to integrate a star rating system for more detailed information. With personalization in mind, a category sorting method that separates the titles by genre, publisher ete., will also be a key feature. 
+In the future I plan to integrate a star rating system for more detailed information in updating the reviews table on the sinatra hosted backend. With personalization in mind, a category sorting method that separates the titles by  author, genre, publisher ete., will also be a key feature. 
 
 # Support
 Feel free to reach out to me reading any questions or concerns at dannyboyint@gmail.com
