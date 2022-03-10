@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import "./Manga.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "font-awesome/css/font-awesome.min.css"
 // import ReactStars from 'react-stars';
 import MangaForm from '../MangaForm/MangaForm';
 import { NavLink } from 'react-router-dom';
@@ -23,13 +21,7 @@ export default function Manga() {
     
   }, []);
 
-  const Loading = () => {
-    return (
-      <div>
-        <h2>Loading...</h2>
-      </div>
-    );
-  }
+  
   function handleDeleteClick(event){
     const idd = event.target.name
     fetch(`http://localhost:9292/mangas/${idd}`, {
@@ -55,9 +47,9 @@ export default function Manga() {
                 <p>by: {manga.author}</p>
                 <p>Publisher: {manga.publisher}</p>
                 <p>New Chapter: {manga.activity}</p>
-                <NavLink to={`/review`} className="rate-btn">Rate</NavLink>
                 {/* <ReactStars /> */}
-                <div>
+                <div className='btn-div'>
+                <NavLink to={`/mangas/${manga.id}`} className="btn" id='rate-btn'>Rate</NavLink>
                   <button className='btn' id="like-btn" onClick={handleLikeClick}>Like</button>
                   <button className='btn' id="delete-btn" name={manga.id} onClick={handleDeleteClick}>Delete</button>
                 </div>
@@ -68,19 +60,15 @@ export default function Manga() {
       </div>
     )
   }
-  // const filterManga = (comic) => {
-  //   const updatedList = data.filter((info) => info.)
-  // }
+ 
 
   return (
     <div>
       <div className='manga-container'>
-        <h1 className='manga-title'>Popular Manga</h1>
-        <br />
-        <div>
+        
           <MangaForm />
-        </div>
-        {loading ? <Loading /> : <ShowManga />}
+          <h1 className='manga-title'>Popular Manga</h1>
+          <ShowManga />
       </div>
 
     </div>
