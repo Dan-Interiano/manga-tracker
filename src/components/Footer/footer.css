@@ -1,11 +1,12 @@
 .footer-container{
     padding: 7px;
-    margin: 10px 30px;
+    margin: 0px 30px;
     height: 17%;
     background-color: #f99385;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .list-container{

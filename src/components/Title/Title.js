@@ -47,6 +47,7 @@ export default function Title() {
                 <img src={title.image} alt={title.name} className="t-image" />
                 <h2>{title.title}</h2>
                 {/* <h3>Reviews</h3> */}
+                <h5>id:{title.id}</h5>
                 <div className='t-reviews'>
                     {/* {title.reviews.map((review) => (
                         <div className='rev-card'>

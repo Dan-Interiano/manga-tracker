@@ -11,12 +11,12 @@ In the future I plan to integrate a star rating system for more detailed informa
 
 # Support
 Feel free to reach out to me reading any questions or concerns at dannyboyint@gmail.com
-Also refer to my blog on this application for examples on how it is to be used and it's purpose.
+
 
 
 # Contact
 Daniel Interiano - dannyboyint@gmail.com
-Project Link - https://github.com/daninteriano/phase1project
+
 
 # Acknowledgments 
 

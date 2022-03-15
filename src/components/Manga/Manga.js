@@ -1,24 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import "./Manga.css"
-// import ReactStars from 'react-stars';
 import MangaForm from '../MangaForm/MangaForm';
 import { NavLink } from 'react-router-dom';
+// import ReactStars from 'react-stars';
 
 export default function Manga() {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
 
-  // const { id, title, author, publisher, image, activity} = data;
 
   useEffect(() => {
-    setLoading(true);
     fetch("http://localhost:9292/mangas")
       .then((res) => res.json())
       .then((data) => {
         setData(data)})
-        
-      setLoading(false);
-    
   }, []);
 
   
