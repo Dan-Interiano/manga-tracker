@@ -20,12 +20,11 @@ export default function Review() {
   return (
       <div className='r-div'>
         <h2>Reviews</h2>
-        if (reviews){
           <div className='rev-container'>
           {reviews.map((review) => {
             return (
               <div className='review-card' key={review.id}>
-                <h1 className='rev-name'>{review.title}</h1>
+                <h1 className='rev-name'>{review.manga?.title}</h1>
                 <h4>{review.title}</h4>
                 <p>{review.comment}</p>
                 <h5>Rated {review.score} out of 5!</h5>
@@ -34,8 +33,6 @@ export default function Review() {
             )
           })}
         </div>
-        }
-        
       </div>
     )
 }

@@ -7,7 +7,7 @@ export default function Title() {
     const [title, setTitle] = useState([]);
     const { id } = useParams();
     const [revform, setRevForm] = useState({
-        manga_id: undefined,
+        manga_id: id,
         comment: undefined,
         score: undefined,
         title: undefined
@@ -63,7 +63,6 @@ export default function Title() {
                 <form onSubmit={handleSubmit}>
                     <h3>Add Your Review Here!</h3>
                     <label>Title: <input type="text" name="title" value={revform.title} onChange={handleChange} /></label>
-                    <label>Manga Id: <input type='text' name="manga_id" value={revform.manga_id} onChange={handleChange} /></label>
                     <label>Score: <input type="text" name="score" value={revform.score} onChange={handleChange} /></label>
                     <label>Comment: <textarea type='text' name="comment" value={revform.comment} onChange={handleChange} /></label>
 
