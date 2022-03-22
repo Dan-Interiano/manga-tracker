@@ -17,7 +17,7 @@ export default function Title() {
         fetch(`http://localhost:9292/mangas/${id}`)
             .then((res) => res.json())
             .then((data) => {
-                console.log(data.reviews)
+                console.log(data)
                 setTitle(data)
             })
     }, [])
@@ -45,18 +45,17 @@ export default function Title() {
         <div className='t-container'>
             <div className='t-card'>
                 <img src={title.image} alt={title.name} className="t-image" />
-                <h2>{title.title}</h2>
-                {/* <h3>Reviews</h3> */}
-                <h5>id:{title.id}</h5>
+                <h1>{title.title}</h1>
+                <h3>Reviews</h3>
                 <div className='t-reviews'>
-                    {/* {title.reviews.map((review) => (
-                        <div className='rev-card'>
+                    {title.reviews?.map((review) => (
+                        <div className='rev-card' key={review.id}>
                             <h4>{review.title}</h4>
                             <p>{review.comment}</p>
                             <h5>Rated {review.score} out of 5!</h5>
                             <h6>Created at: {review.created_at}</h6>
                         </div>
-                    ))} */}
+                    ))}
                 </div>
             </div>
             <div className='form-container' id='rev-form'>
