@@ -17,7 +17,7 @@ function App() {
 
   return (
     
-    <div className="App" style={{backgroundColor:darkMode ? "#1B2361": "#FEECE9", color:darkMode && "white"}}>
+    <div className="App" style={{backgroundColor:darkMode ? "#1B1811": "#EAEAEA", color:darkMode && "white"}}>
       <Toggle />
       <NavBar />
       <Switch>

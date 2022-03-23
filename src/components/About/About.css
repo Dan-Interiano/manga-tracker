@@ -16,7 +16,7 @@
     height: 100%;
 }
 .bottom-div{
-    border: 3px solid rgb(202, 146, 55);
+    border: 3px solid #79A1B0;
     border-radius: 8px;
     width: 90%;
     height: 70%;
@@ -25,6 +25,9 @@
     justify-content: center;
     align-items: center;
 }   
+.bottom-div > p {
+    padding: 15px;
+}
 .about-pg {
     font-size: medium;
     font-style: normal;

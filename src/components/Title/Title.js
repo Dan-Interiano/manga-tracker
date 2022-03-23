@@ -38,6 +38,7 @@ export default function Title() {
         })
             .then((res) => res.json())
             .then((data) => setRevForm(data))
+            setRevForm('')
     }
 
     return (

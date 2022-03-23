@@ -4,8 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: black;
 }
-
+.rev-select {
+    align-self: flex-start;
+    margin-left: 20px;
+}
 .review-card{
     border: 3px solid rgb(233, 123, 27);
     border-radius: 5px;

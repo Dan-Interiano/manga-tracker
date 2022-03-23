@@ -8,7 +8,7 @@ export default function About() {
         <img src='./assests/mangaimage1.jpg' className='top-img' alt='about background'/>
       </div>
       <div className='bottom-div'>
-        <h3>About Us</h3>
+        <h1>About Us</h1>
         <p className='about-pg'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 

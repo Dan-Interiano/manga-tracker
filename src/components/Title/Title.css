@@ -28,9 +28,10 @@
     height: 30%;
     display: flex;
     margin: 5px;
+    padding: 10px;
 }
 .rev-card {
-    border: 3px green solid;
+    border: 3px #A4D0BB solid;
     margin: 10px;
     height: 100%;
 }

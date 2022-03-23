@@ -14,7 +14,7 @@
   justify-content: center;
 }
 .card {
-  border: 3px solid #FE7E6D;
+  border: 3px solid #79A1B0;
   border-radius: 5px;
   height: 50%;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
@@ -35,7 +35,7 @@
     
 }
 .card-body {
-  border: 3px solid rgb(226, 165, 95);
+  border: 3px solid #79A1B0;
   border-radius: 5px;
   padding: 15px;
   margin-top: 10px;
